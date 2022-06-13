@@ -1,0 +1,62 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (2.0.2)
+      console (~> 1.10)
+      io-event (~> 1.0.0)
+      timers (~> 4.1)
+    async-http (0.56.6)
+      async (>= 1.25)
+      async-io (>= 1.28)
+      async-pool (>= 0.2)
+      protocol-http (~> 0.22.0)
+      protocol-http1 (~> 0.14.0)
+      protocol-http2 (~> 0.14.0)
+      traces (~> 0.4.0)
+    async-io (1.33.0)
+      async
+    async-pool (0.3.10)
+      async (>= 1.25)
+    async-websocket (0.19.0)
+      async-http (~> 0.54)
+      async-io (~> 1.23)
+      protocol-websocket (~> 0.7.0)
+    console (1.15.3)
+      fiber-local
+    fiber-local (1.0.0)
+    grumlin (0.19.4)
+      async-pool (~> 0.3)
+      async-websocket (~> 0.19)
+      oj (~> 3.12)
+      retryable (~> 3.0)
+      zeitwerk (~> 2.4)
+    io-event (1.0.9)
+    oj (3.13.14)
+    parallel (1.22.1)
+    protocol-hpack (1.4.2)
+    protocol-http (0.22.6)
+    protocol-http1 (0.14.4)
+      protocol-http (~> 0.22)
+    protocol-http2 (0.14.2)
+      protocol-hpack (~> 1.4)
+      protocol-http (~> 0.18)
+    protocol-websocket (0.7.5)
+      protocol-http (~> 0.2)
+      protocol-http1 (~> 0.2)
+    retryable (3.0.5)
+    timers (4.3.3)
+    traces (0.4.1)
+    zeitwerk (2.5.4)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  grumlin
+  parallel
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.3.14

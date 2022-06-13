@@ -1,0 +1,12 @@
+version: "3"
+services:
+  gremlin_server:
+    image: tinkerpop/gremlin-server:3.5
+    expose: 
+    - 8182
+  demo:
+    build: .
+    depends_on:
+      - gremlin_server
+    links:
+      - gremlin_server
