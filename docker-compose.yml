@@ -2,6 +2,7 @@ version: "3"
 services:
   gremlin_server:
     image: tinkerpop/gremlin-server:3.5
+    # image: tinkerpop/gremlin-server:3.6 # Also affected
     expose: 
     - 8182
   demo:

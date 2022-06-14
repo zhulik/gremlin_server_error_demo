@@ -1,6 +1,10 @@
 # gremlin_server_error_demo
 
-A simple script that reproduces https://issues.apache.org/jira/browse/TINKERPOP-1923
+A simple script that reproduces https://issues.apache.org/jira/browse/TINKERPOP-1923.
+
+Gremlin-server versions tested and affected:
+- 3.5
+- 3.6
 
 # Requirements
 - docker-compose
